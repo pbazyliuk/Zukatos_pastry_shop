@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ua" ng-app="zkPastry">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-cloak>
+	
+	<!-- <h1>Hello world!</h1> -->
+
+    <!-- <pastry-app></pastry-app> -->
+<div class="container">
+            <nav >
+                    <div>
+                        <a href="#/main">Zukatos</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#/main">Main</a>
+                        </li>
+                        <li>
+                            <a href="#/about">About</a>
+                        </li> 
+                        <li>
+                            <a href="#/cafe">Cafe</a>
+                        </li> 
+                        <li>
+                            <a href="#/menu">Menu</a>
+                        </li> 
+                        <li>
+                            <a href="#/order">Order</a>
+                        </li> 
+                        <li>
+                            <a href="#/contacts">Contacts</a>
+                        </li>
+                    </ul>
+            </nav>
+    </div>
+
+    
+
+
+    <ng-view></ng-view>
+
+    <footer>Footer goes here</footer>
+
+	<script src="libs/angular/angular.js"></script>
+    <!-- <script src="libs/angular-component-router/angular_1_router.js"></script>  -->   
+    <script src="libs/angular-route/angular-route.js"></script>    
+    
+    <script src="js/module.js"></script>
+    <!-- <script src="js/components/pastry-app/pastry-app.component.js"></script> -->
+   	<script src="js/components/main-info/main-info.component.js"></script>
+   	<script src="js/components/about-info/about-info.component.js"></script>
+   	<script src="js/components/cafe-info/cafe-info.component.js"></script>    
+        <script src="js/components/menu-info/menu-info.component.js"></script>
+        <script src="js/components/contacts-info/contacts-info.component.js"></script>
+        <script src="js/components/order-info/order-info.component.js"></script>
+
+</body>
+</html>
