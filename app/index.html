@@ -4,15 +4,57 @@
 	<meta charset="UTF-8">
 	<!-- <base href="/"> -->
 	<title>Document</title>
-	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Tinos:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="libs/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-cloak>
 	
+    <div class="container">
+       
+        <header class="header">
+            <div class="header__hero-photo header__hero-photo--main-theme"></div> 
+
+            <nav class="header__navbar">
+                <ul class="menu-left-part">
+                    <li class="menu-left-part__item">
+                        <a class="menu-left-part__link" href="#/main">Головна</a>
+                    </li>
+                    <li class="menu-left-part__item">
+                        <a class="menu-left-part__link" href="#/about">Про нас</a>
+                    </li> 
+                    <li class="menu-left-part__item menu__item--margined">
+                        <a class="menu-left-part__link" href="#/menu">Солодощі</a>
+                    </li> 
+                </ul>
+
+                <div class="logo">
+                    <a href="#/main">
+                        <img src="images/main page/logo2.png" alt="logo">
+                    </a>
+                </div>
+
+                <ul class="menu-right-part">
+                    <li class="menu-right-part__item">
+                        <a class="menu-right-part__link" href="#/cafe">Кафе</a>
+                    </li>
+                    <li class="menu-right-part__item">
+                        <a class="menu-right-part__link" href="#/order">Замовлення</a>
+                    </li> 
+                    <li class="menu-right-part__item">
+                        <a class="menu-right-part__link" href="#/contacts">Контакти</a>
+                    </li> 
+                </ul>
+            </nav> <!-- end header__navbar -->            
+        </header> <!-- end header -->        
+
+        
+   
 	<!-- <h1>Hello world!</h1> -->
 
     <!-- <pastry-app></pastry-app> -->
-<div class="container">
+<!-- <div class="container">
             <nav >
                     <div>
                         <a href="#/main">Zukatos</a>
@@ -38,17 +80,61 @@
                         </li>
                     </ul>
             </nav>
-    </div>
+    </div> -->
 
     
 
 
     <ng-view></ng-view>
 
-    <footer>Footer goes here</footer>
+    <footer class="footer">
+        <div class="footer__location footer-section">
+            <div class="location">
+                <span class="home-icon-sm"></span>
+                <h4 class="location__header footer-header">
+                    Локація
+                </h4>
+                <p class="location__text footer-text">
+                    79008, м. Львів, <br/>
+                    вул. Вірменська 12
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer__schedule footer-section">
+            <div class="schedule">
+                <span class="clock-icon-sm"></span>
+                <h4 class="schedule__header footer-header">
+                    Графік роботи
+                </h4>
+                <p class="schedule__text footer-text">
+                    Пн - Пт: 11.00 - 22.00 <br/>
+                    Сб - Нд: 9 - 22.00 
+                </p>
+            </div>
+        </div>
 
+        <div class="footer__contacts footer-section">
+            <div class="contacts">
+                <span class="user-icon-sm"></span>
+                <h4 class="contacts__header footer-header">
+                    Контакти
+                </h4>
+                <p class="contacts__text footer-text">
+                    тел:  +(032) 245-50-50 <br/>
+                    email: info@zukatos.com
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <p class="footer__copyright">
+            Веб-дизайн “Сам Студіо”. Усі права застережено &copy; 2017 
+        </p>
+        
+    </footer>
+ </div> <!-- end container -->
+    <script src="libs/jquery/dist/jquery.js"></script>
 	<script src="libs/angular/angular.js"></script>
-    <!-- <script src="libs/angular-component-router/angular_1_router.js"></script>  -->   
     <script src="libs/angular-route/angular-route.js"></script>    
     
     <script src="js/module.js"></script>

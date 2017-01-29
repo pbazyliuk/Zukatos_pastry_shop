@@ -1,5 +1,517 @@
-h1
-	color: red
-	display: flex
-	background-color: orange
-	font-style: italic
+/*! **********************************************
+	**********************************************
+		Website Name: Zukatos Pastry Shop
+		Website URL: 
+		Website Author: Pavlo Bazyliuk
+		Copyright 2017. All Rights Reserved.
+	**********************************************
+	**********************************************
+		Css Styles
+		***************  
+		1. General Styles
+		2. Main Page Styles
+		3. About Page Styles
+		4. Pastries Page Styles
+		5. Cafe Page Styles 
+		6. Order Page Styles 
+		7. Contacts Page Styles
+	**********************************************
+	********************************************** 
+		Color Guide
+		***************
+		ffffff - White
+		f0f0f0 - Light Gray
+		ebebeb - Grey
+		232323 - Dark Grey
+		000000 - Black
+		ee9632 - Orange
+	***********************************************
+	******************************************** */
+
+
+/*! **********************************************
+				1. General Styles
+	******************************************** */
+
+html, 
+body 
+	min-width: 1280px
+	width: 100%	
+	margin: 0
+	padding: 0
+	font-size: 62.5%	/* 1rem = 10px */	
+
+body 
+	font-family: "Tinos", "Times New Roman", serif
+	font-weight: 400
+	font-size: 2.4rem
+	line-height: 130%
+	color: #000
+	background-color: #ebebeb
+
+.container 
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0
+	background-color: white
+
+.container-narrow 
+	max-width: 1012px
+	margin: 0 auto
+	padding: 0
+
+.clearfix::after 
+	content: ""
+	display: table
+	clear: both
+
+
+
+/*! **********************************************
+				2. Main Page Styles
+	******************************************** */
+
+/* Main Page / Header General Styles */
+
+.header
+	position: relative
+
+.header__hero-photo
+	max-width: 1170px
+	width: 100%
+	height: 731px
+
+.header__hero-photo--main-theme
+	background-image: url("../images/main%20page/hero_main.jpg")
+
+.header__navbar
+	position: absolute
+	top: 0
+	width: 100%
+
+
+.menu-left-part
+	background-color: #232323
+	border-top: 5px solid  #f0f0f0
+	border-bottom: 5px solid  #f0f0f0
+	width: 448px
+	height: 61px
+	line-height: 51px
+	padding: 0
+	padding-left: 6.7%
+	margin-top: 46px
+	float: left
+	box-sizing: border-box;
+
+.menu-left-part__item
+	display: inline-block
+	margin-right: 16%
+	font-size: 1.9rem
+
+.menu-left-part__item:last-child	
+	margin-right: 0
+
+.menu-left-part__link 
+	color: #f0f0f0
+	text-decoration: none
+	border-bottom: 1px solid #232323
+
+.menu-left-part__link:hover
+	text-decoration: none
+	color: #ee9632
+	padding-bottom: 3px
+	border-bottom: 1px solid #ee9632
+	transition: color .3s, border-bottom .3s
+
+
+.logo 
+	width: 274px
+	height: 136px
+	text-align: center
+	background-color: #232323
+	position: absolute
+	top: 0
+	left: 448px
+	border: 7px solid #f0f0f0
+	float: left
+	box-sizing: border-box;
+
+
+.menu-right-part
+	background-color: #232323
+	border-top: 5px solid  #f0f0f0
+	border-bottom: 5px solid  #f0f0f0
+	max-width: 448px
+	width: 100%
+	height: 61px
+	line-height: 51px
+	padding: 0
+	padding-right: 6.7%
+	margin-top: 46px 
+	text-align: right
+	float: right
+	box-sizing: border-box;
+
+.menu-right-part__item
+	display: inline-block
+	margin-right: 16%
+	font-size: 1.9rem
+
+.menu-right-part__item:last-child	
+	margin-right: 0
+
+.menu-right-part__link 
+	color: #f0f0f0
+	text-decoration: none
+	border-bottom: 1px solid #232323
+
+.menu-right-part__link:hover
+	text-decoration: none
+	color: #ee9632
+	padding-bottom: 3px
+	border-bottom: 1px solid #ee9632
+	transition: color .3s, border-bottom .3s
+
+
+/* Main Page / Main Part Styles */
+
+.line-container
+	margin: 60px auto
+
+.line-container__thick-line	
+    border-bottom: 2px solid #232323
+    margin-bottom: 2px
+
+.line-container__thin-line
+	border-bottom: 1px solid #232323
+
+
+.heading-primary   
+    margin: 0
+    padding: 0
+    font-size: 3.4rem
+    text-align: center
+
+.heading-primary:after 
+    display: inline-block
+    margin: 0 0 5px -75px
+    height: 1px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 93px
+
+.heading-primary:before 
+    display: inline-block
+    margin: 0 -75px 5px 0
+    height: 1px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 93px
+
+.heading-primary__text:after 
+    display: inline-block
+    margin: 0 0 12px 20px
+    height: 2px
+    content: " "
+     text-shadow: none
+    background-color: #ee9632
+    width: 75px
+
+.heading-primary__text:before 
+    display: inline-block
+    margin: 0 20px 12px 0
+    height: 2px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 75px
+
+.welcome-info__text
+	text-indent: 30px
+	margin: 30px 0
+
+
+/* Main Content Styles / Pastries Subection Styles  */
+
+.welcome-info-pastries-subsection
+	width: 304px
+	float: left
+	margin-right: 50px
+
+.welcome-info-pastries-subsection__img
+	width: 304px
+	height: 313px
+
+.welcome-info-pastries-subsection__header
+	width: 100%
+	margin: 40px 0 17px
+	padding: 0
+	text-align: center
+
+.welcome-info-pastries-subsection__header:before
+	display: inline-block
+	margin: 0 15px 5px 0
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-pastries-subsection__header:after
+	display: inline-block
+	margin: 0 0 5px 15px
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-pastries-subsection__text 
+	margin: 0
+	text-indent: 30px
+	text-align: left
+
+
+/* Main Content Styles / Cafe Subection Styles  */
+
+.welcome-info-cafe-subsection
+	width: 304px
+	float: left
+	margin-right: 50px
+
+.welcome-info-cafe-subsection__img
+	width: 304px
+	height: 313px
+
+.welcome-info-cafe-subsection__header
+	width: 100%
+	margin: 40px 0 17px
+	padding: 0
+	text-align: center
+
+.welcome-info-cafe-subsection__header:before
+	display: inline-block
+	margin: 0 15px 5px 0
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-cafe-subsection__header:after
+	display: inline-block
+	margin: 0 0 5px 15px
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-cafe-subsection__text 
+	margin: 0
+	text-indent: 30px
+	text-align: left
+
+
+/* Main Content Styles / Order Subection Styles */
+
+.welcome-info-order-subsection
+	width: 304px
+	float: left
+
+.welcome-info-order-subsection__img
+	width: 304px
+	height: 313px
+
+.welcome-info-order-subsection__header
+	width: 100%
+	margin: 40px 0 17px
+	padding: 0
+	text-align: center
+
+.welcome-info-order-subsection__header:before
+	display: inline-block
+	margin: 0 15px 5px 0
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-order-subsection__header:after
+	display: inline-block
+	margin: 0 0 5px 15px
+	height: 1px
+	content: " "
+	text-shadow: none
+	background-color: #ee9632
+	width: 57px
+
+.welcome-info-order-subsection__text 
+	margin: 0
+	text-indent: 30px
+	text-align: left
+
+
+/* Main Content Styles / Gallery Section Styles  */	
+
+.gallery
+	position: relative
+	margin-top: 30px
+
+.gallery__images
+	width: 1012px
+	height: 293px
+	overflow: hidden
+
+.gallery__item
+	width: 253px
+	height: 292px
+	cursor: pointer
+
+.gallery__next-btn 
+	position: absolute
+	left: -50px
+	top: calc((293px - 25px)/2)
+	z-index: 100
+	width: 22px
+	height: 22px
+	transform: rotate(-45deg)
+	cursor: pointer
+	border-left: 2px solid black
+	border-top: 2px solid black
+
+.gallery__next-btn:hover	
+	border-left: 2px solid #ee9632
+	border-top: 2px solid #ee9632
+
+.gallery__prev-btn 
+	position: absolute
+	right: -50px
+	top: calc((293px - 25px)/2)
+	z-index: 100
+	width: 22px
+	height: 22px
+	transform: rotate(135deg)
+	cursor: pointer
+	border-left: 2px solid black
+	border-top: 2px solid black
+
+.gallery__prev-btn:hover	
+	border-left: 2px solid #ee9632
+	border-top: 2px solid #ee9632
+
+
+/* Gallery Section Styles / Modal Window Styles */	
+
+.modal-window 
+   	display: none 
+    position: fixed
+    z-index: 100
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0,0.4)
+    text-align: center
+
+.modal-window__wrapper
+	width: 506px
+	height: 584px
+	background-color: white
+	display: inline-block
+	position: relative
+	top: calc((100% - 584px)/2)
+
+.modal-window__close 
+	cursor: pointer
+	position: absolute
+	z-index: 100
+	color: white
+	right: 10px
+	top: 5px
+
+.modal-window__close:before
+	display: inline-block
+	content: "\00d7"
+	font-size: 30px
+
+.modal-window__close:hover
+	color: #ee9632
+
+.isShown
+	display: block
+
+
+/* Main Page / Footer Styles */
+
+.footer
+	width: 100%	
+	height: 100%
+	min-height: 187px
+	background-color: #232323
+	color: #f0f0f0
+
+	
+/* Footer Styles / Footer Sections Styles */
+
+.footer-section
+	float: left
+	max-height: 187px
+	width: 33.3%
+	text-align: center
+
+.footer-header
+	display: inline-block
+	font-weight: 700
+	font-size: 2.4rem
+	margin: 35px 0 15px
+	padding: 0
+	padding-bottom: 5px
+	border-bottom: 1px solid #f0f0f0
+
+.footer-text
+	margin: 0
+	padding: 0
+	font-size: 1.9rem
+	line-height: 140%
+
+.footer__copyright
+	margin: 0
+	padding: 0
+	text-align: center
+	font-size: 1.4rem
+	margin-top: 30px
+
+
+/* Footer Styles / Footer Icons */
+
+.home-icon-sm, .clock-icon-sm, .user-icon-sm
+	display: inline-block
+	background: url('/../images/main%20page/sprite_icons.png') no-repeat
+	overflow: hidden
+	text-indent: -9999px
+	text-align: left
+ 
+.home-icon-sm
+	background-position: -5px -0px
+	width: 17px
+	height: 17px
+	margin-right: 3px
+
+
+.clock-icon-sm
+	background-position: -5px -22px
+	width: 17px
+	height: 17px
+	margin-right: 3px
+
+.user-icon-sm
+	background-position: -5px -44px
+	width: 17px
+	height: 17px
+	margin-right: 3px
