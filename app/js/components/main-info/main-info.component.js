@@ -7,8 +7,10 @@
 
 	function controller() {
 
+		
 		var model = this;
 			
+
 		$(".gallery__next-btn").on('click', function() {
 			var firstEl = $(".gallery__images img:first-child");
 			firstEl.addClass("modal");
@@ -51,7 +53,7 @@
 		  		$(".modal-window__image-wrapper").empty();
 		  		$(document).on('click', '.gallery__item', showModal);
 		    }
-		}
+		};
 	}
 		
 	module.component("mainInfo", {

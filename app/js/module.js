@@ -16,4 +16,25 @@
    			.otherwise({redirectTo:'/main'});
   	}]);
 
+
+
+    module.controller('myCtrl', function($scope, $location, aaa) {
+      $scope.someF = function(b) {
+        console.log(b)
+        var myEl = angular.element( document.querySelector( '#hero-photo' ) );
+        myEl.removeClass();
+        myEl.addClass("header__hero-photo",b);
+        myEl.addClass(b);
+      }
+
+    $scope.isActive = function (viewLocation) { 
+/*      console.log("isActive")
+      console.log(viewLocation)
+      console.log($location.path())*/
+        $scope.value = aaa.myFunc($location.path());
+        $scope.someF( $scope.value);
+        return viewLocation === $location.path();
+    };
+    
+  });
 }());

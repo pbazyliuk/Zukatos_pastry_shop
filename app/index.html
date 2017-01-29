@@ -13,19 +13,19 @@
 	
     <div class="container">
        
-        <header class="header">
-            <div class="header__hero-photo header__hero-photo--main-theme"></div> 
+        <header class="header"  ng-controller="myCtrl">
+            <div class="header__hero-photo" id="hero-photo"></div> 
 
             <nav class="header__navbar">
                 <ul class="menu-left-part">
-                    <li class="menu-left-part__item">
-                        <a class="menu-left-part__link" href="#/main">Головна</a>
+                    <li   class="menu-left-part__item">
+                        <a ng-class="{ active: isActive('/main')}" class="menu-left-part__link" href="#/main">Головна</a>
                     </li>
-                    <li class="menu-left-part__item">
-                        <a class="menu-left-part__link" href="#/about">Про нас</a>
+                    <li  class="menu-left-part__item">
+                        <a ng-class="{ active: isActive('/about')}" class="menu-left-part__link" href="#/about">Про нас</a>
                     </li> 
                     <li class="menu-left-part__item menu__item--margined">
-                        <a class="menu-left-part__link" href="#/menu">Солодощі</a>
+                        <a ng-class="{ active: isActive('/menu')}" class="menu-left-part__link" href="#/menu">Солодощі</a>
                     </li> 
                 </ul>
 
@@ -37,17 +37,19 @@
 
                 <ul class="menu-right-part">
                     <li class="menu-right-part__item">
-                        <a class="menu-right-part__link" href="#/cafe">Кафе</a>
+                        <a ng-class="{ active: isActive('/cafe')}" class="menu-right-part__link" href="#/cafe">Кафе</a>
                     </li>
                     <li class="menu-right-part__item">
-                        <a class="menu-right-part__link" href="#/order">Замовлення</a>
+                        <a ng-class="{ active: isActive('/order')}" class="menu-right-part__link" href="#/order">Замовлення</a>
                     </li> 
                     <li class="menu-right-part__item">
-                        <a class="menu-right-part__link" href="#/contacts">Контакти</a>
+                        <a ng-class="{ active: isActive('/contacts')}" class="menu-right-part__link" href="#/contacts">Контакти</a>
                     </li> 
                 </ul>
-            </nav> <!-- end header__navbar -->            
-        </header> <!-- end header -->        
+            </nav> <!-- end header__navbar -->
+<!-- 
+            <div>{{value}}</div>   -->
+       </header> <!-- end header -->        
 
         
    
@@ -138,6 +140,7 @@
     <script src="libs/angular-route/angular-route.js"></script>    
     
     <script src="js/module.js"></script>
+    <script src="js/service.js"></script>
     <!-- <script src="js/components/pastry-app/pastry-app.component.js"></script> -->
    	<script src="js/components/main-info/main-info.component.js"></script>
    	<script src="js/components/about-info/about-info.component.js"></script>
@@ -145,6 +148,7 @@
         <script src="js/components/menu-info/menu-info.component.js"></script>
         <script src="js/components/contacts-info/contacts-info.component.js"></script>
         <script src="js/components/order-info/order-info.component.js"></script>
+        
 
 </body>
 </html>
