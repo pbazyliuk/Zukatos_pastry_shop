@@ -1,1 +1,285 @@
-<h2>Menu Info</h2>
+<main class="main">
+	<div class="container-narrow">
+		<div class="line-container">
+	        <div class="line-container__thick-line"></div>
+	        <div class="line-container__thin-line"></div>
+	    </div>
+		<div class="pastries-section">
+			<div class="pastries-info">
+				<h2 class="heading-primary"><span class="heading-primary__text">Солодощі</span></h2>
+
+				<p class="base-text">Zukato’s пропонує широкий асортимент тортів, пирогів, авторських десертів, хліба, печива та кексів.
+				Наше меню відповідає високим вимогам клієнтських вподобань, так як і сезонні солодощі, які ми створюємо з натхненням і тільки зі свіжих інгредієнтів. Як справжня європейська кондитерська, ми виготовляємо наші солодощі виключно з натуральних інгредієнтів. Також у нашому меню ви можете знайти хліб без глютену та десерти без цукру.</p>
+			</div>
+			
+			<div class="line-container">
+		        <div class="line-container__thin-line"></div>
+		    </div>
+
+		    <div class="patries-menu">
+		    	<ul class="patries-menu__list">
+		    		<li class="patries-menu__item"><a href ng-class="{ active: isSet(1) }" ng-click="setTab(1)" class="patries-menu__link">до сніданку</a></li>
+		    		<li class="patries-menu__item"><a ng-class="{ active: isSet(2) }" ng-click="setTab(2)" class="patries-menu__link" href="">авторські десерти</a></li>
+		    		<li class="patries-menu__item"><a ng-class="{ active: isSet(3) }" ng-click="setTab(3)" class="patries-menu__link" href="">торти</a></li>
+		    		<li class="patries-menu__item"><a ng-class="{ active: isSet(4) }" ng-click="setTab(4)" class="patries-menu__link" href="">пироги</a></li>
+		    	</ul>
+		    </div>
+
+		    <div class="patries-menu__section clearfix" ng-show="isSet(1)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">До сніданку</span></h2>		    	
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/skones.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Тістечка</h4>
+
+		    		<div class="subsection-info__text">
+		    			з абрикосом, чорницею, малиною,	шоколадом та сиром
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/maffin.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Мафіни</h4>
+
+		    		<div class="subsection-info__text">
+		    			з бананом, яблуками, родзинками, горіхами та малиною
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/role.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Роли</h4>
+
+		    		<div class="subsection-info__text">
+		    			з коричневим цукром, корицею, горіхами, глазур’ю
+
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/crousan.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Круасани</h4>
+
+		    		<div class="subsection-info__text">
+		    			класичні, з шоколадом, вишнею, шинкою, лососем
+
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/bakes.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Булочки</h4>
+
+		    		<div class="subsection-info__text">
+		    			з ізюмом, яблуками, сиром, ваніллю, джемом
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/for breakfest/pudding.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Запіканки</h4>
+
+		    		<div class="subsection-info__text">
+		    			з сиром, яблуками, гарбузом, лимоном
+		    		</div>
+		    	</div>
+		    
+		    </div> <!-- end patries-menu__section 1 -->
+
+			<div class="patries-menu__section clearfix" ng-show="isSet(2)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Авторські десерти</span></h2>
+		    	
+		    	
+				<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/authory/apple.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Мело парадізо</h4>
+
+		    		<div class="subsection-info__text">
+		    			запечене яблуко з фісташ-ками, родзинками та медом
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/authory/bravo_maestro.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Браво Маестро</h4>
+
+		    		<div class="subsection-info__text">
+		    			шоколадно-сирний торт, з вершками та амаретто
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/authory/silcilia.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Сіцилія Аморе</h4>
+
+		    		<div class="subsection-info__text">
+		    			кукурудзяний пиріг, з апельсином та ваннілю
+		    		</div>
+		    	</div>
+			</div>
+
+
+		    <div class="patries-menu__section clearfix" ng-show="isSet(3)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Торти</span></h2>		    	
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/mocca.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Мокка</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з бісквітними кор-жами та вершково-кавовим кремом
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/caramel.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Ромовий</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з горіховими кор-жами, ромовим кремом, грильяжем
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/torino.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Туринський</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з шоколадними коржами, шоколадно-лимонним кремом
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/yogurt.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Йогуртовий</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з бісквітними кор-жами, йогуртом та чорни-цями
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/raspberry.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Малинова мрія</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з сирними коржами, малиною та апельсином
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/cakes/rosher.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header ">Рошер</h4>
+
+		    		<div class="subsection-info__text">
+		    			Торт з коржами бізе, шоколадно-масляним кремом та фундуком
+		    		</div>
+		    	</div>
+
+		    	
+		    </div>
+
+		    <div class="patries-menu__section  clearfix" ng-show="isSet(4)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Пироги</span></h2>
+		    	
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/pie/coconut.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Кокосовий</h4>
+
+		    		<div class="subsection-info__text">
+		    			Пиріг з сирною масою, кокосом та вершками
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/pie/napoleon.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Наполеон</h4>
+
+		    		<div class="subsection-info__text">
+		    			Пиріг з слоєними коржа-ми та заварним кремом
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/pastries page/pie/peach.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Персиковий</h4>
+
+		    		<div class="subsection-info__text">
+		    			Пиріг зі свіжими персика-ми, подається з морозивом
+		    		</div>
+		    	</div>
+		    			    	
+		    </div>
+
+		    <div class="line-container">
+			    <div class="line-container__thin-line"></div>
+			</div>
+
+
+			
+			
+			
+
+	    	
+		
+	</div> <!-- container-narrow end -->    
+</main> <!-- end main -->

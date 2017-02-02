@@ -82,7 +82,7 @@ body
 	height: 731px
 
 .header__hero-photo--main-theme
-	background-image: url("../images/main%20page/hero_main.jpg")
+	background-image: url("../images/main%20page/main_theme.jpg")
 
 .header__hero-photo--about-theme
 	background-image: url("../images/about%20page/about-theme.jpg")
@@ -137,7 +137,6 @@ body
 	padding-bottom: 3px
 	border-bottom: 1px solid #ee9632
 	transition: color .3s, border-bottom .3s
-
 
 .logo 
 	width: 274px
@@ -243,29 +242,41 @@ body
     background-color: #ee9632
     width: 75px
 
-.welcome-info__text
-	text-indent: 30px
+.base-text
+	text-indent: 40px
 	margin: 30px 0
 
 
-/* Main Content Styles / Pastries Subection Styles  */
 
-.welcome-info-pastries-subsection
+
+
+
+.subsection-info
 	width: 304px
 	float: left
 	margin-right: 50px
 
-.welcome-info-pastries-subsection__img
+
+.subsection-info:nth-of-type(3n) 
+	margin-right: 0
+
+.subsection-info--top-margin
+	margin-top: 50px
+
+/* .subsection-info--no-margin
+	margin-right: 0 */
+
+.subsection-info__img
 	width: 304px
 	height: 313px
 
-.welcome-info-pastries-subsection__header
+.subsection-info__header
 	width: 100%
 	margin: 40px 0 17px
 	padding: 0
 	text-align: center
 
-.welcome-info-pastries-subsection__header:before
+.subsection-info__header:before
 	display: inline-block
 	margin: 0 15px 5px 0
 	height: 1px
@@ -274,7 +285,7 @@ body
 	background-color: #ee9632
 	width: 57px
 
-.welcome-info-pastries-subsection__header:after
+.subsection-info__header:after
 	display: inline-block
 	margin: 0 0 5px 15px
 	height: 1px
@@ -283,91 +294,26 @@ body
 	background-color: #ee9632
 	width: 57px
 
-.welcome-info-pastries-subsection__text 
+.subsection-info__header--small-dashed:before
+	width: 40px
+
+.subsection-info__header--small-dashed:after
+	width: 40px
+
+.subsection-info__text 
 	margin: 0
 	text-indent: 30px
 	text-align: left
+	word-break: normal
+	hyphens: auto
 
 
-/* Main Content Styles / Cafe Subection Styles  */
-
-.welcome-info-cafe-subsection
-	width: 304px
-	float: left
-	margin-right: 50px
-
-.welcome-info-cafe-subsection__img
-	width: 304px
-	height: 313px
-
-.welcome-info-cafe-subsection__header
-	width: 100%
-	margin: 40px 0 17px
-	padding: 0
-	text-align: center
-
-.welcome-info-cafe-subsection__header:before
-	display: inline-block
-	margin: 0 15px 5px 0
-	height: 1px
-	content: " "
-	text-shadow: none
-	background-color: #ee9632
-	width: 57px
-
-.welcome-info-cafe-subsection__header:after
-	display: inline-block
-	margin: 0 0 5px 15px
-	height: 1px
-	content: " "
-	text-shadow: none
-	background-color: #ee9632
-	width: 57px
-
-.welcome-info-cafe-subsection__text 
-	margin: 0
-	text-indent: 30px
-	text-align: left
 
 
-/* Main Content Styles / Order Subection Styles */
 
-.welcome-info-order-subsection
-	width: 304px
-	float: left
 
-.welcome-info-order-subsection__img
-	width: 304px
-	height: 313px
 
-.welcome-info-order-subsection__header
-	width: 100%
-	margin: 40px 0 17px
-	padding: 0
-	text-align: center
 
-.welcome-info-order-subsection__header:before
-	display: inline-block
-	margin: 0 15px 5px 0
-	height: 1px
-	content: " "
-	text-shadow: none
-	background-color: #ee9632
-	width: 57px
-
-.welcome-info-order-subsection__header:after
-	display: inline-block
-	margin: 0 0 5px 15px
-	height: 1px
-	content: " "
-	text-shadow: none
-	background-color: #ee9632
-	width: 57px
-
-.welcome-info-order-subsection__text 
-	margin: 0
-	text-indent: 30px
-	text-align: left
 
 
 /* Main Content Styles / Gallery Section Styles  */	
@@ -533,7 +479,81 @@ body
 	margin-right: 3px
 
 
+
+
+/*! **********************************************
+				3. About Page Styles
+	******************************************** */
+
+/* .about-section__text 
+	text-indent: 30px */
+
+.about-section__image-wrapper	
+	margin: 40px auto 0
+	text-align: center
+
+.about-section__image-caption
+	margin-top: 15px
+	font-style: italic
+
+
+/*! **********************************************
+				3. Menu Page Styles
+	******************************************** */
+
+/* .pastries-info__text 
+	text-indent: 30px */
+
+.patries-menu__list 
+	text-align: center
+	list-style-type: none;
+	margin-bottom: 60px
+
+.patries-menu__item
+	list-style-decoration: none
+	display: inline-block
+	margin-right: 35px
+
+.patries-menu__item:last-child
+	margin-right: 0
+
+.patries-menu__link
+	text-decoration: none
+	color: black
+	font-weight: 700
+
+.patries-menu__link:hover
+	color: #ee9632
+	padding-bottom: 3px
+	border-bottom: 1px solid #ee9632
+	transition: color .3s, border-bottom .3s
+
 .active 
 	color: #ee9632
 	padding-bottom: 3px
 	border-bottom: 1px solid #ee9632
+
+.heading-secondary   
+    margin: 0
+    padding: 0
+    font-size: 3rem
+    text-align: center
+
+.heading-secondary__text:after 
+    display: inline-block
+    margin: 0 0 12px 20px
+    height: 2px
+    content: " "
+     text-shadow: none
+    background-color: #ee9632
+    width: 75px
+
+.heading-secondary__text:before 
+    display: inline-block
+    margin: 0 20px 12px 0
+    height: 2px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 75px
+

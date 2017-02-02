@@ -28,7 +28,7 @@
 		});
 
 
-		$(document).on('click', '.gallery__item', showModal);
+		$(".gallery__images").on('click', '.gallery__item', showModal);
 		
 		 function showModal() {
 		  $("#modal").addClass("isShown");

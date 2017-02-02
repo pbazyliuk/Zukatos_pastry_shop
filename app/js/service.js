@@ -30,9 +30,9 @@ module.service('aaa', function() {
      x = "header__hero-photo--contacts-theme";
      return x;
     break;
-  default:
+  /*default:
     alert( 'Я таких значений не знаю' );
-    break;
+    break;*/
 }
 
 
