@@ -8,7 +8,7 @@ gulp.task('serv', function() {
   gulp.src('app')
     .pipe(server({
       livereload: true,
-		port: 8080,
+		port: 8090,
       open: true
     }));  
 });

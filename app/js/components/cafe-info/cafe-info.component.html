@@ -1,1 +1,156 @@
-<h2>Caffee info</h2>
+<main class="main">
+	<div class="container-narrow">
+		<div class="line-container">
+	        <div class="line-container__thick-line"></div>
+	        <div class="line-container__thin-line"></div>
+	    </div>
+		<div class="cafe-section">
+			<div class="cafe-info">
+				<h2 class="heading-primary"><span class="heading-primary__text">Кафе</span></h2>
+				<p class="base-text">Яскраве, європейське кафе Zukato’s пропонує щоденне меню супів, салатів, сендвічів, запіканок та випічки. Ми запрошуємо Вас завітати на сніданок, обід або зробити замовлення про доставку.</p>
+				<p class="base-text">Витратьте трішки власного часу, щоб скуштувати наші авторські десерти,  смачні гарячі напої, в тому числі наш фірмовий гарячий шоколад зі свіжими збитими вершками.</p>
+			</div>			
+			<div class="line-container">
+		        <div class="line-container__thin-line"></div>
+		    </div>
+
+		     <div class="patries-menu">
+		    	<ul class="patries-menu__list">
+		    		<li class="patries-menu__item"><a href ng-class="{ active: isSet(1) }" ng-click="setTab(1)" class="patries-menu__link">сніданок</a></li>
+		    		<li class="patries-menu__item"><a ng-class="{ active: isSet(2) }" ng-click="setTab(2)" class="patries-menu__link" href="">обід</a></li>
+		    		<li class="patries-menu__item"><a ng-class="{ active: isSet(3) }" ng-click="setTab(3)" class="patries-menu__link" href="">напої</a></li>
+		    		
+		    	</ul>
+		    </div>
+
+		    <div class="patries-menu__section clearfix" ng-show="isSet(1)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Сніданок</span></h2>		    	
+		    	
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/breakfest/french-toast.jpg" alt="skones">
+		    		</div>
+		    
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Французькі тости</h4>
+		    
+		    		<div class="subsection-info__text">з маслом, джемом, бана-ном та медом
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/breakfest/omlet.jpg" alt="skones">
+		    		</div>
+		    
+		    		<h4 class="subsection-info__header">Омлети</h4>
+		    
+		    		<div class="subsection-info__text">
+		    			з беконом, помідорами, грибами, куркою та зеленню
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+
+		    			<img src="../../../images/cafe page/breakfest/sandwich.jpg" alt="skones">
+		    		</div>
+		    
+		    		<h4 class="subsection-info__header">Сендвічі</h4>
+		    
+		    		<div class="subsection-info__text">з пршутом, помідорами чері, горгондзоллою та
+					зеленню
+		    		</div>
+		    	</div>
+			</div>
+
+		    <div class="patries-menu__section clearfix" ng-show="isSet(2)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Обід</span></h2>
+		    	
+				<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/dinner/minetsrone.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Мінестроне</h4>
+					
+		    		<div class="subsection-info__text">
+		    			суп овочевий з пастою, селерою, фасолею, редькою, томатом
+		    		</div>
+		    	</div>				
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/dinner/caprese8.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Капрезе</h4>
+					
+		    		<div class="subsection-info__text">
+		    			салат з базиліком, моца-реллою, помідорами
+		    		</div>
+		    	</div>
+				
+				<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/dinner/cesar3.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Цезар</h4>
+					
+		    		<div class="subsection-info__text">
+		    			салат айсберг з куркою смаженою на грилі, помі-дорами чері
+		    		</div>
+		    	</div>
+		    	
+		</div>
+
+		<div class="patries-menu__section clearfix" ng-show="isSet(3)">
+		    	
+	    		<h2 class="heading-secondary"><span class="heading-secondary__text">Напої</span></h2>		    	
+		    	
+				<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/drinks/coffee.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header ">Кава</h4>
+					
+		    		<div class="subsection-info__text">
+		    			з віскі, карамеллю, тертим шоколадом та корицею
+		    		</div>
+		    	</div>
+
+				<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/drinks/chockolate.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header subsection-info__header--small-dashed">Гарячий шоколад</h4>
+					
+		    		<div class="subsection-info__text">
+		    			зі збитими вершками, морозивом, фруктовими сиропами
+		    		</div>
+		    	</div>
+
+		    	<div class="subsection-info subsection-info--top-margin">
+		    		<div class="subsection-info__image">
+		    			<img src="../../../images/cafe page/drinks/tea.jpg" alt="skones">
+		    		</div>
+
+		    		<h4 class="subsection-info__header">Чай</h4>
+					
+		    		<div class="subsection-info__text">
+		    			чорний, зелений, трав’я-ний, фруктовий та імбирний
+		    		</div>
+		    	</div>
+		</div>
+
+
+		<div class="line-container">
+			<div class="line-container__thin-line"></div>
+		</div>
+
+	</div>
+</main>

@@ -1,1 +1,123 @@
-<h2>Order Info</h2>
+<main class="main">
+	<div class="container-narrow">
+		<div class="line-container">
+	        <div class="line-container__thick-line"></div>
+	        <div class="line-container__thin-line"></div>
+	    </div>
+		<div class="cafe-section">
+			<div class="cafe-info">
+				<h2 class="heading-primary"><span class="heading-primary__text">Замовлення</span></h2>
+				<p class="base-text">Протягом багатьох років, кондитеська Zukato’s створює найкращі весільні торти та торти на замовлення. Співпрацючи з нашими клієнтами, ми завжди намагаємось поєднати вимоги замовника у відповідності до нашого асортименту тортів, начинок та декору. Також розробити	унікальний дизайн, який буде відображати ваш стиль та образ.</p>
+				<p class="base-text">Для визначення орієнтовної вартості торту на замовлення ви можете скористатись <span class="text-accented" id="calculator">онлайн калькулятором</span>.</p>
+				<p class="base-text">Замовлення ви можете здійснити скориставшись <span class="text-accented" id="contact-form">контактною формою</span> або за телефоном <br/>+ (032) 245-50-50.</p>
+			</div>			
+			<div class="line-container">
+		        <div class="line-container__thick-line"></div>
+		        <div class="line-container__thin-line"></div>
+		    </div>
+
+		    <div class="gallery-section">
+		    	<div class="gallery-section__header">
+					<h2 class="heading-primary"><span class="heading-primary__text">Галерея</span></h2>
+				</div>
+
+				<div class="gallery">
+					<div class="gallery__prev-btn"></div>
+					
+					<div class="gallery__images"><img src="../../../images/main page/gallery/foto_lg1.jpg" alt="" class="gallery__item"><img src="../../../images/main page/gallery/foto_lg2.jpg" alt="" class="gallery__item"><img src="../../../images/main page/gallery/foto_lg3.jpg" alt="" class="gallery__item"><img src="../../../images/main page/gallery/foto_lg4.jpg" alt="" class="gallery__item"><img src="../../../images/main page/gallery/foto_lg5.jpg" alt="" class="gallery__item"><img src="../../../images/main page/gallery/foto_lg6.jpg" alt="" class="gallery__item"></div>
+
+					<div class="gallery__next-btn"></div>
+
+					<div class="modal-window" id="modal">
+						<div class="modal-window__wrapper">
+							<span class="modal-window__close"></span>
+					    	<div class="modal-window__image-wrapper"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="line-container">
+			        <div class="line-container__thin-line"></div>
+			    </div>				
+		    </div>
+
+
+		    <div class="modal-window-calculator" id="modal-calculator">
+				<div class="modal-window-calculator__wrapper">
+						<span class="modal-window-calculator__close"></span>
+						<div class="modal-window-calculator__content">
+							<h3 class="heading-modal"><span class="heading-modal__text">Онлайн калькулятор</span></h3>
+
+							<div class="line-modal-container">
+						        <div class="line-container__thick-line"></div>
+						        <div class="line-container__thin-line"></div>
+						    </div>
+
+						    <form action="">
+						    	<label > Назва торту<br/>
+						    		<select name="tort" id="tort">
+						    		<option value="" disabled selected>Варіант торту</option>
+						    		<option value="">мокка</option>
+						    		<option value="">ромовий</option>
+						    		<option value="">туринський</option>
+						    		<option value="">йогуртовий</option>
+						    		<option value="">малинова мрія</option>
+						    		<option value="">рошер</option>
+						    	</select>
+						    	</label> <br/>
+								
+								<div class="order-tort">
+							    	<label for="check"><input type="checkbox" id="check">Торт на замовлення
+										
+							    	</label>
+
+							    	<br>
+
+							    	<select name="azyme" id="azyme">
+							    		<option value="" disabled selected>Коржі</option>
+							    		<option value="">бісквітні</option>
+							    		<option value="">горіхові</option>
+							    		<option value="">шоколадні</option>
+							    		<option value="">пісочні</option>
+							    	</select>
+
+							    	<select name="cream" id="cream">
+							    		<option value="" disabled selected>Крем</option>
+							    		<option value="">масляний</option>
+							    		<option value="">шоколадний</option>
+							    		<option value="">заварний</option>
+							    		<option value="">сметанковий</option>
+							    	</select>
+
+							    	<select name="decor" id="decor">
+							    		<option value="" disabled selected>Декор</option>
+							    		<option value="">фрукти</option>
+							    		<option value="">мастика</option>
+							    		<option value="">vip</option>
+							    	</select>
+								</div>
+								
+						    	<br>
+
+						    	<label for="unique-design"><input type="checkbox" id="unique-design">Розробка унікального дизайну
+									
+						    	</label>
+								<br>
+						    	<label for="date"><input type="checkbox" id="date">Терміновість		
+						    	</label>
+<br>
+						    	<label > Вага торту<br/>
+						    		<input step="0.5" min="1" max="5" type="number" placeholder="Оберіть вагу торту">
+						    	</label> <br/>
+						    </form>
+
+						    <div class="line-modal-container">
+						        <div class="line-container__thin-line"></div>
+						    </div>	
+						</div>
+					</div>
+				</div>	
+		    </div>
+		</div>
+	</div>
+</main>

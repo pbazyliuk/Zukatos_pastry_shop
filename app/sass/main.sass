@@ -295,10 +295,10 @@ body
 	width: 57px
 
 .subsection-info__header--small-dashed:before
-	width: 40px
+	width: 38px
 
 .subsection-info__header--small-dashed:after
-	width: 40px
+	width: 38px
 
 .subsection-info__text 
 	margin: 0
@@ -389,6 +389,7 @@ body
 	position: relative
 	top: calc((100% - 584px)/2)
 
+
 .modal-window__close 
 	cursor: pointer
 	position: absolute
@@ -404,9 +405,6 @@ body
 
 .modal-window__close:hover
 	color: #ee9632
-
-.isShown
-	display: block
 
 
 /* Main Page / Footer Styles */
@@ -557,3 +555,96 @@ body
     background-color: #ee9632
     width: 75px
 
+
+
+.text-accented 
+	font-weight: 700
+	cursor: pointer
+
+
+.modal-window-calculator
+	display: none
+	position: fixed
+	z-index: 100
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0,0.4)
+	text-align: center
+
+.modal-window-calculator__wrapper
+	width: 925px
+	padding: 0 44px
+	height: 600px
+	overflow: hidden
+	background-color: white
+	display: inline-block
+	position: relative
+	top: calc((100% - 600px)/2)
+
+.modal-window-calculator__close 
+	cursor: pointer
+	position: absolute
+	z-index: 100
+	color: black
+	right: 10px
+	top: 5px
+
+.modal-window-calculator__close:before
+	display: inline-block
+	content: "\00d7"
+	font-size: 30px
+
+.modal-window-calculator__close:hover
+	color: #ee9632
+
+.isShown
+	display: block
+
+.heading-modal   
+    margin: 45px 0 0
+    padding: 0
+    font-size: 2.8rem
+    text-align: center
+
+.heading-modal:after 
+    display: inline-block
+    margin: 0 0 3px -75px
+    height: 1px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 93px
+
+.heading-modal:before 
+    display: inline-block
+    margin: 0 -75px 3px 0
+    height: 1px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 93px
+
+.heading-modal__text:after 
+    display: inline-block
+    margin: 0 0 10px 20px
+    height: 2px
+    content: " "
+     text-shadow: none
+    background-color: #ee9632
+    width: 75px
+
+.heading-modal__text:before 
+    display: inline-block
+    margin: 0 20px 10px 0
+    height: 2px
+    content: " "
+    text-shadow: none
+    background-color: #ee9632
+    width: 75px
+
+.line-modal-container
+	margin: 30px 0
